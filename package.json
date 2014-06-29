@@ -1,0 +1,22 @@
+{
+  "name": "schtick",
+  "description": "A scheduled task runner based on sch.",
+  "version": "0.0.1",
+  "author": "Bret Copeland <bret@atlantisflight.org>",
+  "main": "./lib/Schtick.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bretcope/schtick.git"
+  },
+  "dependencies": {
+    "sch": "^0.1.1"
+  },
+  "keywords": [
+    "scheduled",
+    "task",
+    "runner",
+    "cron",
+    "sch"
+  ],
+  "license": "MIT"
+}
