@@ -9,7 +9,7 @@
     "url": "https://github.com/bretcope/schtick.git"
   },
   "dependencies": {
-    "sch": "^0.1.1"
+    "sch": "0.x.x"
   },
   "keywords": [
     "scheduled",
