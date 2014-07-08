@@ -15,9 +15,11 @@ Run a task every minute:
 ```javascript
 var schtick = require('schtick');
 
-var s = schtick('minutes(0-59)', { autoStart: true }, function (intendedDate) {
+var s = schtick('minutes(0-59)', function (intendedDate) {
   console.log(intendedDate);
 });
+
+// can be stopped later by calling s.stop() and resumed again using s.start()
 ```
 
 ## Schtick Object
@@ -30,7 +32,7 @@ The constructor can be called with or without the `new` operator. It returns a `
 
 * `schedule` Either a sch format string, or an `sch` object. See the [sch library](https://github.com/bretcope/sch) for documentation.
 * `options` An optional object with some or all of the following properties:
-    * `autoStart` (boolean, Default: `false`) If true, `start()` is automatically called.
+    * `autoStart` (boolean, Default: `true`) If true, `start()` is automatically called, otherwise the task won't be run until start is explicitly called.
     * `lastTick` (Date, Default: `new Date()`) The last Date when the task is known to have run. Used for [Task Windows](#task-windows).
     * `window` (number, Default: `0`) The period of time (in milliseconds) after an event should have run where it would still be appropriate to run it. See [Task Windows](#task-windows) for more details. 
 * `task` An optional function which will automatically be attached to the tick event. `schtick#on('tick', task)`
