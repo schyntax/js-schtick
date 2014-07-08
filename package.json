@@ -1,7 +1,7 @@
 {
   "name": "schtick",
   "description": "A scheduled task runner based on sch.",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "Bret Copeland <bret@atlantisflight.org>",
   "main": "./lib/Schtick.js",
   "repository": {
