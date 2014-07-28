@@ -41,7 +41,7 @@ The constructor can be called with or without the `new` operator. It returns a `
 
 `ref()`
 
-If you had previously called [`schtick#unref`](#schtick-ref), you can call `schtick#ref` to request the instance hold the program open. If the instance is already `ref`d then calling `schtick#ref` again will have no effect.
+If you had previously called [`schtick#unref`](#schtickunref), you can call `schtick#ref` to request the instance hold the program open. If the instance is already `ref`d then calling `schtick#ref` again will have no effect.
 
 ### schtick#start
 
