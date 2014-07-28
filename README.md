@@ -37,6 +37,12 @@ The constructor can be called with or without the `new` operator. It returns a `
     * `window` (number, Default: `0`) The period of time (in milliseconds) after an event should have run where it would still be appropriate to run it. See [Task Windows](#task-windows) for more details. 
 * `task` An optional function which will automatically be attached to the tick event. `schtick#on('tick', task)`
 
+### schtick#ref
+
+`ref( )`
+
+If you had previously called [`schtick#unref`](#schtickunref), you can call `schtick#ref` to request the instance hold the program open. If the instance is already `ref`d then calling `schtick#ref` again will have no effect.
+
 ### schtick#start
 
 `start ( [lastTick] )`
@@ -50,6 +56,12 @@ Starts the task runner (if it is not already running).
 `stop ( )`
 
 Stops the task runner and clears any existing timeout.
+
+### schtick#unref
+
+`unref( )`
+
+Calls `unref()` on the underlying timer, allowing the program to exit if this task is the only thing in the event loop. Please see node's [`timers#unref`](http://nodejs.org/api/timers.html#timers_unref) for details.
 
 ### Events
 
