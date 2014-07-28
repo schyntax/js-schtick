@@ -39,7 +39,7 @@ The constructor can be called with or without the `new` operator. It returns a `
 
 ### schtick#ref
 
-`ref()`
+`ref( )`
 
 If you had previously called [`schtick#unref`](#schtickunref), you can call `schtick#ref` to request the instance hold the program open. If the instance is already `ref`d then calling `schtick#ref` again will have no effect.
 
@@ -59,7 +59,7 @@ Stops the task runner and clears any existing timeout.
 
 ### schtick#unref
 
-`unref()`
+`unref( )`
 
 Calls `unref()` on the underlying timer, allowing the program to exit if this task is the only thing in the event loop. Please see node's [`timers#unref`](http://nodejs.org/api/timers.html#timers_unref) for details.
 
