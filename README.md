@@ -1,6 +1,6 @@
 # schtick
 
-A scheduled task runner for Node.js built on top of [sch](https://github.com/bretcope/sch).
+A scheduled task runner for Node.js built on top of [schyntax](https://github.com/schyntax/js-schyntax).
 
 ## Install
 
@@ -30,7 +30,7 @@ var s = schtick('minutes(0..59)', function (intendedDate) {
 
 The constructor can be called with or without the `new` operator. It returns a `Schtick` object.
 
-* `schedule` Either a sch format string, or an `sch` object. See the [sch library](https://github.com/bretcope/sch) for documentation.
+* `schedule` Either a schyntax format string, or an `schyntax` object. See the [schyntax library](https://github.com/schyntax/js-schyntax) for documentation.
 * `options` An optional object with some or all of the following properties:
     * `autoStart` (boolean, Default: `true`) If true, `start()` is automatically called, otherwise the task won't be run until start is explicitly called.
     * `lastTick` (Date, Default: `new Date()`) The last Date when the task is known to have run. Used for [Task Windows](#task-windows).
@@ -70,7 +70,7 @@ Calls `unref()` on the underlying timer, allowing the program to exit if this ta
 ### Properties
 
 * `isRunning` (boolean) True if the task runner is active, otherwise false.
-* `schedule` (sch object) The sch object. See the [sch documentation](https://github.com/bretcope/sch)
+* `schedule` (schyntax object) The schyntax object. See the [schyntax documentation](https://github.com/schyntax/js-schyntax)
 
 ## Task Windows
 

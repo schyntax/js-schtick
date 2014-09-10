@@ -1,22 +1,23 @@
 {
   "name": "schtick",
-  "description": "A scheduled task runner based on sch.",
+  "description": "A scheduled task runner built on top of schyntax.",
   "version": "0.3.0",
   "author": "Bret Copeland <bret@atlantisflight.org>",
   "main": "./lib/Schtick.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bretcope/schtick.git"
+    "url": "https://github.com/schyntax/js-schtick.git"
   },
   "dependencies": {
-    "sch": ">=0.5.0"
+    "schyntax": ">=0.5.2"
   },
   "keywords": [
     "scheduled",
     "task",
     "runner",
     "cron",
-    "sch"
+    "sch",
+    "schyntax"
   ],
   "license": "MIT"
 }
