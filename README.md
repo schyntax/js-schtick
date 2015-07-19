@@ -1,5 +1,7 @@
 # schtick
 
+[![npm version](https://badge.fury.io/js/schtick.svg)](http://badge.fury.io/js/schtick)
+
 A scheduled task runner for Node.js built on top of [schyntax](https://github.com/schyntax/js-schyntax).
 
 ## Install
