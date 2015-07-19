@@ -9,7 +9,7 @@
     "url": "https://github.com/schyntax/js-schtick.git"
   },
   "dependencies": {
-    "schyntax": ">=0.5.2"
+    "schyntax": ">=0.6.1"
   },
   "keywords": [
     "scheduled",

@@ -15,7 +15,7 @@ Run a task every minute:
 ```javascript
 var schtick = require('schtick');
 
-var s = schtick('minutes(0..59)', function (intendedDate) {
+var s = schtick('minutes(*)', function (intendedDate) {
   console.log(intendedDate);
 });
 
