@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "node-uuid": "^1.4.3",
-    "schyntax": ">=0.6.1"
+    "schyntax": "^1.0.0"
   },
   "keywords": [
     "scheduled",
